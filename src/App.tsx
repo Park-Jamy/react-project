@@ -4,7 +4,7 @@ import React from 'react';
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello, TypeScript + React!</h1>
+      <h1>hello my first react project</h1>
     </div>
   );
 };
