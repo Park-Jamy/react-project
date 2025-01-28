@@ -37,7 +37,6 @@ console.log(user_);
 // 익명 함수, 화살표 함수
 
 // 익명 함수
-
 const fun = function(age: number){
     console.log('age=> ' + age);
     return age;
@@ -45,6 +44,32 @@ const fun = function(age: number){
 
 console.log(fun(30));
 
+
+// 화살표 함수
 const test_ = (x : any) => x + x;
 
 console.log(test_(10));
+
+
+// indexOf()
+// 어떤 특정한 값을 찾기 위해서 사용
+
+const strList : String[] = ["테스트", "인정"];
+
+const isExist = strList.indexOf("테스트") !== -1;
+console.log(strList.indexOf("테스트"));
+console.log(isExist);
+
+// filter()
+// json 객체 중에서 특정한 값만 추출해서 반환시켜주는 함수
+
+const arr_ = [{ "name": "apple", "count": 2 },
+    { "name": "orange", "count": 5 },
+    { "name": "banana", "count": 16 },
+    { "name": "orange", "count": 3 }];
+
+const newArr_ = arr_.filter(function(arrName){
+    return arrName.name === "orange";
+})
+
+console.log(newArr_);
