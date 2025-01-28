@@ -73,3 +73,11 @@ const newArr_ = arr_.filter(function(arrName){
 })
 
 console.log(newArr_);
+
+// map()
+// 기존의 배열의 요소들을 하나씩 읽어들여서 계산후 길이가 같은 새로운 배열을 만들어주는 함수
+const arr3_ = [6,5,8];
+
+//화살표 함수를 사용해서 간단하게 표시해봅니다.
+const test4_ = arr3_.map(x=>x+x);
+console.log(test4_);
