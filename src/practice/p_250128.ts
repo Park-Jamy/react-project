@@ -32,3 +32,19 @@ user_.name = 'PARK';
 console.log(user_);
 user_.address.city = 'Busan';
 console.log(user_);
+
+
+// 익명 함수, 화살표 함수
+
+// 익명 함수
+
+const fun = function(age: number){
+    console.log('age=> ' + age);
+    return age;
+}
+
+console.log(fun(30));
+
+const test_ = (x : any) => x + x;
+
+console.log(test_(10));
